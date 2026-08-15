@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/(about|services|careers|apply|contact)",
+      "destination": "/api/seo"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "sm-group-corporate-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.2",
+    "framer-motion": "^12.43.0",
+    "gsap": "^3.15.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.7.0",
+    "react-intersection-observer": "^10.0.3",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.5.2",
+    "jimp": "^1.6.1",
+    "oxlint": "^1.71.0",
+    "postcss": "^8.5.16",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4.3.2",
+    "tailwindcss-motion": "^1.1.1",
+    "vite": "^8.1.1"
+  }
+}
