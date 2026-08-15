@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const METADATA = {
   '/': {
@@ -28,7 +28,7 @@ const METADATA = {
   }
 };
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   const urlPath = req.url.split('?')[0] || '/';
   
   // Get corresponding metadata, default to homepage if path is unknown
