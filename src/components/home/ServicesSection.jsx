@@ -70,7 +70,7 @@ const TiltCard = ({ service, index, onSelect }) => {
   const IconComponent = iconMap[service.iconName] || FiBriefcase;
 
   return (
-    <div className="perspective-[1000px] h-[340px] sm:h-[380px] w-full touch-pan-y" style={{ touchAction: 'pan-y' }}>
+    <div className="perspective-[1000px] h-[380px] w-full touch-pan-y" style={{ touchAction: 'pan-y' }}>
       <motion.div
         ref={cardRef}
         onMouseMove={handleMouseMove}
