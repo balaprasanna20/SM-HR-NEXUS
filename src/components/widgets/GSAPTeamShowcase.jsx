@@ -166,7 +166,7 @@ const TeamRow = ({ member, index }) => {
           isEven ? 'lg:order-2' : 'lg:order-1'
         }`}
       >
-        <div className="relative w-full max-w-xs sm:max-w-md">
+        <div className="relative w-full max-w-xs sm:max-w-sm">
 
           {/* Photo Frame with Metallic Gold Border */}
           <div className="bg-gradient-to-tr from-gold-500/50 via-navy-900 to-gold-500/50 p-2.5 sm:p-3 rounded-3xl border border-gold-500/40 shadow-2xl relative">

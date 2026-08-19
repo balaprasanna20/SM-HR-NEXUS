@@ -118,9 +118,70 @@ const Contact = () => {
   const fieldCls = (key) =>
     `w-full bg-navy-950/60 border ${errors[key] ? 'border-red-500/50' : 'border-white/10'} hover:border-white/20 focus:border-gold-500/60 text-cream-100 placeholder-cream-300/30 rounded-xl px-4 py-3 text-xs md:text-sm outline-none transition-colors duration-300`;
 
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Contact SM HR Nexus",
+      "description": "Contact SM HR Nexus' recruitment & consulting team to book a consultation.",
+      "url": "https://www.smhrnexus.com/contact",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "SM HR Nexus",
+        "telephone": "+916385099063",
+        "email": "info@smhrnexus.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3/2 Second Street, Raghava Reddy Colony, Ashok Nagar",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600083",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I contact SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact SM HR Nexus via WhatsApp at +91 6385 099 063, email at info@smhrnexus.com, or by visiting the office at 3/2 Second Street, Raghava Reddy Colony, Ashok Nagar, Chennai 600083."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are SM HR Nexus' office hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus partners are available Monday to Saturday, 9:00 AM to 7:00 PM IST."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a consultation with SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book a consultation by filling out the contact form on the Contact page. You can send your enquiry via WhatsApp or email — both go directly to the partner's line. A senior partner will review your enquiry and respond within 24 hours."
+          }
+        }
+      ]
+    }
+  ]
+};
+
   return (
     <PageTransition>
-      <SEO title="Contact | Book a Consultation" description="Contact SM HR Nexus' recruitment & consulting team to book a consultation, discuss a mandate, or enquire about any of our six specialized practice clusters." />
+      <SEO title="Contact | Book a Consultation" description="Contact SM HR Nexus' recruitment & consulting team to book a consultation, discuss a mandate, or enquire about any of our six specialized practice clusters." schema={contactSchema} />
 
       {/* Header */}
       <section className="relative pt-36 pb-20 md:pt-44 md:pb-24 bg-navy-950 overflow-hidden">

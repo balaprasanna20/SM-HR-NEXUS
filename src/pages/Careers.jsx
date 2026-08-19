@@ -26,9 +26,71 @@ const handleApply = (title) => {
   window.location.href = `mailto:${toEmail}?subject=${sub}&body=${body}`;
 };
 
+const careersSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...openRoles.map((role) => ({
+      "@type": "JobPosting",
+      "title": role.title,
+      "description": role.description + ' Requirements: ' + role.requirements.join('. '),
+      "datePosted": "2026-08-05",
+      "validThrough": "2027-02-05",
+      "employmentType": "FULL_TIME",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "SM HR Nexus",
+        "sameAs": "https://www.smhrnexus.com",
+        "logo": "https://www.smhrnexus.com/logo-icon.png"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3/2 Second Street, Raghava Reddy Colony, Ashok Nagar",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600083",
+          "addressCountry": "IN"
+        }
+      },
+      "industry": "Human Resources",
+      "occupationalCategory": role.department
+    })),
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the work culture at SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus has a flat-hierarchy culture where recruitment consultants get direct access to partners with over 100 years of cumulative experience. The company funds professional development including HR management certifications and compliance training."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What benefits does SM HR Nexus offer to employees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus offers comprehensive medical insurance, generous professional development budgets, collaborative mentorship under experienced partners, and annual performance-based bonuses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I apply for a job at SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can apply by clicking the 'Apply Now' button on any open position, which will open your email client pre-filled with the application details. You can also submit your resume directly through the resume upload form on the Careers page."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const Careers = () => (
   <PageTransition>
-    <SEO title="Careers | Join Our Expert Team" description="Explore careers at SM HR Nexus. Join our team of domain professionals in recruitment, HR SOP consulting, and statutory compliances." />
+    <SEO title="Careers | Join Our Expert Team" description="Explore careers at SM HR Nexus. Join our team of domain professionals in recruitment, HR SOP consulting, and statutory compliances." schema={careersSchema} />
 
     {/* Header */}
     <section className="relative pt-28 pb-12 md:pt-44 md:pb-24 bg-cream-50 overflow-hidden">

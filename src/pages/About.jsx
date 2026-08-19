@@ -35,11 +35,79 @@ const values = [
   { title: 'Timely Delivery', desc: 'Securing top-tier talent quickly under pressure without sacrificing verification standards or alignment.' },
 ];
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "name": "About SM HR Nexus",
+      "description": "Learn about SM HR Nexus' corporate recruitment journey, core values, mission and vision, and the partners driving our business clusters.",
+      "url": "https://www.smhrnexus.com/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "SM HR Nexus",
+        "foundingDate": "2011",
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 10,
+          "maxValue": 50
+        },
+        "knowsAbout": [
+          "Executive Recruitment",
+          "HR SOPs",
+          "Psychometric Testing",
+          "Statutory Compliance",
+          "Background Verification",
+          "Educational Consultancy"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When was SM HR Nexus founded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus was founded in 2011 with a focus on executive recruitment, providing ideal match-making for regional companies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is SM HR Nexus located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus is headquartered at 3/2 Second Street, Raghava Reddy Colony, Ashok Nagar, Chennai 600083, Tamil Nadu, India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are SM HR Nexus' core values?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus operates on four core values: Absolute Integrity (complete confidentiality and transparent evaluations), Ideal Match Making (balanced candidate-employer alignment), Execution Precision (accurate statutory and verification processes), and Timely Delivery (fast talent acquisition without sacrificing quality)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SM HR Nexus' mission?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus' mission is to bring the 3C advantage (Conceive, Create, Complete) to corporate partners, matching suitability, capability, and reliability with absolute integrity."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const About = () => (
   <PageTransition>
     <SEO
       title="About Us | Journey, Vision & Leadership"
       description="Learn about SM HR Nexus' corporate recruitment journey, core values, mission and vision, and the partners driving our business clusters."
+      schema={aboutSchema}
     />
 
     {/* Page Header */}

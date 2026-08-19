@@ -1,4 +1,23 @@
+# SM HR Nexus - Robots.txt
 User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_redirects
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://www.smhrnexus.com/sitemap.xml

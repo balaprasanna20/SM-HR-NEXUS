@@ -48,7 +48,7 @@ const Footer = () => (
           India's premier multi-faceted corporate management consultancy. Built on our Conceive · Create · Complete bedrock.
         </p>
 
-        <div className="space-y-3 pt-1 text-xs">
+        <address className="space-y-3 pt-1 text-xs not-italic">
           <div className="flex gap-3 items-start text-cream-200/90">
             <FiMapPin className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
             <span>3/2 Second Street, Raghava Reddy Colony, Ashok Nagar, Chennai 600083</span>
@@ -61,7 +61,7 @@ const Footer = () => (
             <FiMail className="w-4 h-4 text-gold-400 shrink-0" />
             <a href="mailto:info@smhrnexus.com" className="hover:text-gold-400 transition-colors">info@smhrnexus.com</a>
           </div>
-        </div>
+        </address>
 
         <div className="pt-2">
           <SocialLinks />

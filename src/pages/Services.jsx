@@ -87,9 +87,73 @@ const ProcessSection = () => {
   );
 };
 
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...services.map((srv, idx) => ({
+      "@type": "Service",
+      "name": srv.title,
+      "description": srv.longDescription,
+      "provider": {
+        "@type": "Organization",
+        "name": "SM HR Nexus",
+        "url": "https://www.smhrnexus.com"
+      },
+      "areaServed": { "@type": "Country", "name": "India" },
+      "serviceType": srv.title,
+      "url": "https://www.smhrnexus.com/services"
+    })),
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does SM HR Nexus offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus offers six specialized practice areas: End-to-End Recruitment & Executive Search, HR SOPs & Corporate Consulting, Psychometric Testing & L&D, Investigative Background Inquiries, Statutory Compliance & Payroll, and Educational Consultancy Services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 3C Framework at SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 3C Framework — Conceive, Create, Complete — is SM HR Nexus' structured methodology. It starts with deep stakeholder consultations, moves to regulatory-compliant strategy planning, and concludes with precise execution and long-term partnership support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which industries does SM HR Nexus serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus serves Manufacturing & Heavy Engineering, IT Services & Cloud Technologies, Healthcare & Pharmaceuticals, Banking & Insurance, Private Colleges & Universities, and Real Estate & Logistics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does SM HR Nexus handle statutory compliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, SM HR Nexus provides comprehensive statutory compliance support including PF, ESI, and PT filing, monthly/annual returns, challans, transfer and settlement forms, and tax-friendly salary structuring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is psychometric testing at SM HR Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SM HR Nexus uses psychometric and OPQ assessment tools to evaluate candidate attitudes, behavioral patterns, and reliability. This complements traditional interview methods and helps detect doctored responses."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const Services = () => (
   <PageTransition>
-    <SEO title="Services | HR Practice Clusters" description="Explore SM HR Nexus' six specialized practice areas: recruitment, HR SOPs & consulting, psychometric testing, background inquiries, statutory compliance, and educational placement consulting." />
+    <SEO title="Services | HR Practice Clusters" description="Explore SM HR Nexus' six specialized practice areas: recruitment, HR SOPs & consulting, psychometric testing, background inquiries, statutory compliance, and educational placement consulting." schema={servicesSchema} />
 
     {/* Header */}
     <section className="relative pt-36 pb-20 md:pt-44 md:pb-24 bg-cream-50 overflow-hidden">
