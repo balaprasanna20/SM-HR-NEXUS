@@ -142,8 +142,8 @@ const contactSchema = {
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "09:00",
-          "closes": "19:00"
+          "opens": "09:30",
+          "closes": "18:00"
         }
       }
     },
@@ -163,7 +163,7 @@ const contactSchema = {
           "name": "What are SM HR Nexus' office hours?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "SM HR Nexus partners are available Monday to Saturday, 9:00 AM to 7:00 PM IST."
+            "text": "SM HR Nexus partners are available Monday to Saturday, 9:30 AM to 6:00 PM IST."
           }
         },
         {
@@ -209,7 +209,7 @@ const contactSchema = {
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
               <div>
                 <h2 className="text-xl md:text-2xl font-black text-cream-100">Office Details</h2>
-                <p className="text-xs md:text-sm text-cream-300/60 mt-1.5 leading-relaxed font-light">Our partners are available Monday–Saturday, 9:00 AM – 7:00 PM IST.</p>
+                <p className="text-xs md:text-sm text-cream-300/60 mt-1.5 leading-relaxed font-light">Our partners are available Monday–Saturday, 9:30 AM – 6:00 PM IST.</p>
               </div>
               <div className="space-y-4 md:space-y-6">
                 {contactPoints.map(({ icon: Icon, label, value }) => (
