@@ -111,10 +111,6 @@ const Footer = () => (
           <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </Link>
 
-        <div className="p-4 rounded-xl bg-navy-900 border border-gold-500/15 space-y-1">
-          <p className="text-[10px] font-bold tracking-widest uppercase text-gold-400">Headquarters</p>
-          <p className="text-xs text-cream-100 font-semibold">Location — Chennai</p>
-        </div>
       </div>
 
     </div>
