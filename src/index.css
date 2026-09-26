@@ -30,6 +30,18 @@
   --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
+/* High Contrast Text Utilities */
+.text-card-dark {
+  color: #0A1128 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+.text-card-body {
+  color: #020810 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
 /* ─── Base Reset ──────────────────────────────────────────── */
 *,
 *::before,

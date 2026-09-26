@@ -62,7 +62,7 @@ export const VisionMissionValuesSection = () => (
               <div className="bg-cream-200 border border-white/10 rounded-xl p-6 space-y-3 hover:border-gold-500/30 transition-all h-full shadow-sm">
                 <div className="w-8 h-[2px] rounded-full bg-gold-500" />
                 <h3 className="text-base font-bold text-navy-900">{val.title}</h3>
-                <p className="text-xs text-navy-950 leading-relaxed font-medium">{val.desc}</p>
+                <p className="text-xs text-card-dark leading-relaxed">{val.desc}</p>
               </div>
             </RevealText>
           ))}

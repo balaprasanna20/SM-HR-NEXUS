@@ -75,7 +75,7 @@ const ProcessSection = () => {
                       <h3 className="text-base md:text-lg font-bold text-navy-900 leading-tight">{s.title}</h3>
                       <p className="text-[9px] font-bold tracking-[0.25em] uppercase text-gold-600/80 mt-1">{s.subtitle}</p>
                     </div>
-                    <p className="text-xs md:text-sm text-navy-950 leading-relaxed font-medium">{s.desc}</p>
+                    <p className="text-xs md:text-sm text-card-dark leading-relaxed">{s.desc}</p>
                   </div>
                 </RevealText>
               );

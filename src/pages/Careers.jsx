@@ -145,7 +145,7 @@ const Careers = () => (
               <div className="bg-cream-200 border border-white/5 rounded-xl p-6 md:p-8 space-y-4 hover:border-gold-500/20 transition-colors h-full">
                 <div className="w-8 h-[2px] rounded-full bg-gold-500" />
                 <h3 className="text-base md:text-lg font-bold text-navy-900">{b.title}</h3>
-                <p className="text-xs md:text-sm text-navy-950 leading-relaxed font-medium">{b.description}</p>
+                <p className="text-xs md:text-sm text-card-dark leading-relaxed">{b.description}</p>
               </div>
             </RevealText>
           ))}
