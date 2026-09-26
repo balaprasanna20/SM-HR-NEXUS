@@ -5,6 +5,7 @@ import { FiCheckCircle, FiSearch, FiSliders, FiActivity, FiGift, FiBookOpen, FiU
 import SEO from '../components/layout/SEO';
 import PageTransition from '../components/layout/PageTransition';
 import WordReveal from '../components/widgets/WordReveal';
+import ExpandableText from '../components/widgets/ExpandableText';
 import { services } from '../data/services';
 
 const iconMap = { FiBookOpen: FiBookOpen, FiUsers: FiUsers, FiCpu: FiCpu, FiPieChart: FiPieChart, FiShield: FiShield, FiBriefcase: FiBriefcase };
@@ -190,7 +191,7 @@ const Services = () => (
                     <h2 className="text-xl md:text-2xl font-black text-cream-100 leading-tight">{srv.title}</h2>
                   </div>
                 </div>
-                <p className="text-xs md:text-sm text-cream-300/70 leading-relaxed font-light">{srv.longDescription}</p>
+                <ExpandableText text={srv.longDescription} className="text-xs md:text-sm text-cream-300/80 leading-relaxed font-light" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
                   {srv.subServices.map((sub, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs md:text-sm text-cream-200 font-semibold leading-tight">

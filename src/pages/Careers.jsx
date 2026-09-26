@@ -5,6 +5,7 @@ import SEO from '../components/layout/SEO';
 import PageTransition from '../components/layout/PageTransition';
 import MagneticButton from '../components/common/MagneticButton';
 import WordReveal from '../components/widgets/WordReveal';
+import ExpandableText from '../components/widgets/ExpandableText';
 import { benefits, openRoles } from '../data/careers';
 
 import ResumeUploadForm from '../components/widgets/ResumeUploadForm';
@@ -186,7 +187,7 @@ const Careers = () => (
                       ))}
                     </div>
                   </div>
-                  <p className="text-xs md:text-sm text-cream-300/70 leading-relaxed font-light">{role.description}</p>
+                  <ExpandableText text={role.description} className="text-xs md:text-sm text-cream-300/70 leading-relaxed font-light" />
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {role.requirements.map((r, ri) => (
                       <li key={ri} className="flex gap-2 items-start text-xs text-cream-300/65 font-light">
