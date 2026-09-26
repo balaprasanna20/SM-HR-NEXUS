@@ -62,7 +62,7 @@ const FounderCard = ({ member, index }) => {
           }}
           title={`Connect with ${member.name} on LinkedIn`}
           aria-label={`LinkedIn profile for ${member.name}`}
-          className="w-11 h-11 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-110"
+          className="w-11 h-11 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:text-white hover:shadow-[0_0_15px_rgba(10,102,194,0.6)] flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-110"
         >
           <FiLinkedin className="w-5 h-5" />
         </a>
