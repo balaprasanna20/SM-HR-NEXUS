@@ -9,7 +9,7 @@ const FounderCard = ({ member, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-      className="relative bg-navy-900 border border-gold-500/30 rounded-3xl p-6 sm:p-8 pt-16 sm:pt-20 shadow-xl hover:shadow-2xl hover:border-gold-500/60 transition-all duration-300 flex flex-col items-center text-center mt-14 group"
+      className="relative bg-navy-900 border border-gold-500/30 rounded-3xl p-6 sm:p-8 pt-16 sm:pt-20 shadow-xl hover:shadow-2xl hover:border-gold-500/60 transition-all duration-300 flex flex-col items-center text-center mt-14 group h-full"
     >
       {/* Top Overlapping Circular Avatar Photo */}
       <div className="absolute -top-14 sm:-top-16 left-1/2 -translate-x-1/2">
@@ -17,31 +17,39 @@ const FounderCard = ({ member, index }) => {
           <img
             src={member.image}
             alt={member.name}
-            className="w-full h-full object-cover scale-115"
+            className="w-full h-full object-cover scale-105"
             style={{ objectPosition: member.imagePosition || 'center top' }}
           />
         </div>
       </div>
 
-      {/* Name */}
-      <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mt-2">
-        {member.name}
-      </h3>
+      {/* Name - min-h ensures 1-line and 2-line names align */}
+      <div className="min-h-[4rem] flex items-center justify-center mt-2">
+        <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug">
+          {member.name}
+        </h3>
+      </div>
 
       {/* Role / Subtitle */}
-      <p className="text-sm sm:text-base font-semibold text-gold-400 mt-1">
-        {member.role}
-      </p>
+      <div className="min-h-[2rem] flex items-center justify-center mt-1">
+        <p className="text-sm font-semibold text-gold-400">
+          {member.role}
+        </p>
+      </div>
 
       {/* Department Tag */}
-      <span className="text-[11px] font-semibold text-gold-300 bg-gold-500/10 border border-gold-500/20 px-3 py-0.5 rounded-full mt-2">
-        {member.department}
-      </span>
+      <div className="min-h-[2.5rem] flex items-center justify-center mt-2">
+        <span className="text-[11px] font-semibold text-gold-300 bg-gold-500/10 border border-gold-500/20 px-3 py-1 rounded-full text-center">
+          {member.department}
+        </span>
+      </div>
 
       {/* Short Intro / Description */}
-      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mt-4 flex-1 max-w-xs font-normal">
-        {member.bio}
-      </p>
+      <div className="flex-1 flex items-start justify-center mt-4">
+        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xs font-normal text-center">
+          {member.bio}
+        </p>
+      </div>
 
       {/* LinkedIn Profile Icon Button at Bottom */}
       <div className="mt-6 pt-4 border-t border-gold-500/20 w-full flex justify-center">

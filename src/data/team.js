@@ -36,12 +36,12 @@ export const teamMembers = [
   {
     id: 'saranya-a',
     name: "Saranya A",
-    role: "Human Resources Executive",
+    role: "HR Executive",
     department: "Talent Sourcing & Recruitment",
     image: "/images/team/saranya-a.webp",
-    imagePosition: "center 25%",
+    imagePosition: "center top",
     highlights: ["HR Executive", "Talent Acquisition", "Candidate Sourcing"],
-    bio: "Saranya is a Human Resources Executive passionate about talent acquisition, candidate relationship management, and sourcing top-tier talent for organizational success.",
+    bio: "Saranya is an HR Executive passionate about talent acquisition, candidate relationship management, and sourcing top-tier talent for organizational success.",
     linkedin: "https://www.linkedin.com/in/saranyas25?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 ];
