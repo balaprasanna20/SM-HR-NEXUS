@@ -89,21 +89,11 @@ const GSAPTeamShowcase = () => {
           </p>
         </div>
 
-        {/* 5 Founder Cards Layout: Top 3 cards grid, Bottom 2 cards centered */}
-        <div className="space-y-16 max-w-6xl mx-auto">
-          {/* First row of 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8">
-            {teamMembers.slice(0, 3).map((member, index) => (
-              <FounderCard key={member.id} member={member} index={index} />
-            ))}
-          </div>
-
-          {/* Second row of 2 cards centered */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8 max-w-4xl mx-auto">
-            {teamMembers.slice(3, 5).map((member, index) => (
-              <FounderCard key={member.id} member={member} index={index + 3} />
-            ))}
-          </div>
+        {/* 4 Team Member Cards Layout: Responsive 1/2/4 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-6 max-w-7xl mx-auto">
+          {teamMembers.map((member, index) => (
+            <FounderCard key={member.id} member={member} index={index} />
+          ))}
         </div>
 
       </div>

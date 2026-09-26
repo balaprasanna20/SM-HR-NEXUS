@@ -10,17 +10,7 @@ export const teamMembers = [
     bio: "Adithya is a Finance and HR Professional with 8 years of experience in recruitment. He specializes in talent acquisition, client relationship management, and connecting the right talent with opportunities through a people-first approach.",
     linkedin: "https://www.linkedin.com/in/adithya-s-108473140"
   },
-  {
-    id: 'rahul-raj',
-    name: "Rahul Raj A",
-    role: "Technical Recruiter",
-    department: "Global Talent Sourcing",
-    image: "/images/team/rahul-raj.webp",
-    imagePosition: "center 28%",
-    highlights: ["BTech IT", "Global Tech Hiring", "Workforce Planning"],
-    bio: "Rahul is a BTech IT graduate with 4+ years in global technical recruiting. He is passionate about people-centric hiring and delivering a great candidate experience, with a focus on strategic workforce planning.",
-    linkedin: "https://www.linkedin.com/in/rahul-raj-032516208"
-  },
+
   {
     id: 'hariharan',
     name: "Hariharan",
