@@ -20,8 +20,8 @@ export const VisionMissionValuesSection = () => (
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-navy-900 leading-tight">
             Our Mission & Vision
           </h2>
-          <p className="text-xs md:text-sm text-navy-800/70 leading-relaxed font-light">
-            Founded on the bedrock of success — <strong className="text-gold-600 font-semibold">Conceive · Create · Complete</strong> — SM HR Nexus connects top-tier talent with corporate excellence through proven methodologies and ethical governance.
+          <p className="text-xs md:text-sm text-navy-950 leading-relaxed font-medium">
+            Founded on the bedrock of success — <strong className="text-gold-600 font-bold">Conceive · Create · Complete</strong> — SM HR Nexus connects top-tier talent with corporate excellence through proven methodologies and ethical governance.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export const VisionMissionValuesSection = () => (
           <div className="bg-navy-900 border border-cream-100/10 rounded-xl p-5 space-y-2 text-cream-50">
             <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-gold-500">Mission</span>
             <h3 className="text-sm font-bold text-cream-100">The 3C Advantage</h3>
-            <p className="text-xs text-cream-300/70 leading-relaxed font-light">
+            <p className="text-xs text-cream-200/90 leading-relaxed font-normal">
               Bring the 3C advantage to corporate partners, matching suitability, capability, and reliability with absolute integrity.
             </p>
           </div>
@@ -37,7 +37,7 @@ export const VisionMissionValuesSection = () => (
           <div className="bg-navy-900 border border-cream-100/10 rounded-xl p-5 space-y-2 text-cream-50">
             <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-gold-500">Vision</span>
             <h3 className="text-sm font-bold text-cream-100">Premier HR Advisory</h3>
-            <p className="text-xs text-cream-300/70 leading-relaxed font-light">
+            <p className="text-xs text-cream-200/90 leading-relaxed font-normal">
               To steer corporate fortunes as India's premier multi-faceted HR advisory, recognized for SM HR Nexus executive recruitment.
             </p>
           </div>
@@ -62,7 +62,7 @@ export const VisionMissionValuesSection = () => (
               <div className="bg-cream-200 border border-white/10 rounded-xl p-6 space-y-3 hover:border-gold-500/30 transition-all h-full shadow-sm">
                 <div className="w-8 h-[2px] rounded-full bg-gold-500" />
                 <h3 className="text-base font-bold text-navy-900">{val.title}</h3>
-                <p className="text-xs text-navy-700/65 leading-relaxed font-light">{val.desc}</p>
+                <p className="text-xs text-navy-950 leading-relaxed font-medium">{val.desc}</p>
               </div>
             </RevealText>
           ))}

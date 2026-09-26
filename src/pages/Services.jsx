@@ -50,7 +50,7 @@ const ProcessSection = () => {
             <div className="w-6 h-px bg-gold-500" />
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-navy-900 tracking-tight">The 3C Framework</h2>
-          <p className="text-xs md:text-sm text-navy-700/55 max-w-xl mx-auto font-light">Conceive, Create, Complete — a structured path transforming corporate challenges into verified successes.</p>
+          <p className="text-xs md:text-sm text-navy-950 max-w-xl mx-auto font-medium">Conceive, Create, Complete — a structured path transforming corporate challenges into verified successes.</p>
         </RevealText>
 
         <div className="relative">
@@ -75,7 +75,7 @@ const ProcessSection = () => {
                       <h3 className="text-base md:text-lg font-bold text-navy-900 leading-tight">{s.title}</h3>
                       <p className="text-[9px] font-bold tracking-[0.25em] uppercase text-gold-600/80 mt-1">{s.subtitle}</p>
                     </div>
-                    <p className="text-xs md:text-sm text-navy-700/55 leading-relaxed font-light">{s.desc}</p>
+                    <p className="text-xs md:text-sm text-navy-950 leading-relaxed font-medium">{s.desc}</p>
                   </div>
                 </RevealText>
               );
