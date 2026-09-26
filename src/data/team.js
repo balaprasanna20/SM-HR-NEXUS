@@ -34,14 +34,14 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/lavanya-achuthamani-323483355"
   },
   {
-    id: 'praveen-v',
-    name: "Praveen V",
-    role: "HR Professional",
-    department: "Talent Acquisition & Sourcing",
-    image: "/images/team/praveen-v.webp",
-    imagePosition: "center 15%",
-    highlights: ["Candidate Experience", "Talent Acquisition", "Client Solutions"],
-    bio: "Praveen is an HR professional specializing in talent acquisition and candidate relationship management. He is committed to ensuring a seamless hiring experience and building strong professional relationships through effective recruitment solutions.",
-    linkedin: "https://www.linkedin.com/in/praveen-v234"
+    id: 'saranya-a',
+    name: "Saranya A",
+    role: "Human Resources Executive",
+    department: "Talent Sourcing & Recruitment",
+    image: "/images/team/saranya-a.webp",
+    imagePosition: "center 25%",
+    highlights: ["HR Executive", "Talent Acquisition", "Candidate Sourcing"],
+    bio: "Saranya is a Human Resources Executive passionate about talent acquisition, candidate relationship management, and sourcing top-tier talent for organizational success.",
+    linkedin: "https://www.linkedin.com/in/saranyas25?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 ];
